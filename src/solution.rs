@@ -1,7 +1,7 @@
 pub struct Solution;
 
 impl Solution {
-pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         for (i, &num1) in nums.iter().enumerate() {
             for (j, &num2) in nums.iter().enumerate().skip(i + 1) {
                 if num1 + num2 == target {
@@ -9,6 +9,6 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
                 }
             }
         }
-        vec![] 
+        vec![]
     }
 }
