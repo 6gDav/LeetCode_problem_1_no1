@@ -20,7 +20,7 @@ I implemented a brute-force solution using nested loops. To avoid the "double-co
 
 ## 📊 Benchmark
 
-I made it in release mode with for more accurate resoults:
+I made it in release mode for more accurate resoults:
 ```bash
 cargo run --release
 ```
