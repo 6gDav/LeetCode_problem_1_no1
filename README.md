@@ -29,12 +29,12 @@ Hardver: *Apple Mac Mini M4*
 
 ### Small Input Test
 
-Execution Time: 1.25µs
-Memory Delta:   0 bytes
-Current Memory: 1409024 bytes
+* Execution Time: 1.25µs
+* Memory Delta:   0 bytes
+* Current Memory: 1409024 bytes
 
 ### Stress Test (Large Input)
 
-Execution Time: 43.046875ms
-Memory Delta:   0 bytes
-Current Memory: 1474560 bytes
+* Execution Time: 43.046875ms
+* Memory Delta:   0 bytes
+* Current Memory: 1474560 bytes
