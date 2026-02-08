@@ -20,12 +20,12 @@ I implemented a brute-force solution using nested loops. To avoid the "double-co
 
 ## 📊 Benchmark
 
-I made it in release mode for more accurate resoults:
+I made it in release mode for more accurate results:
 ```bash
 cargo run --release
 ```
 
-Hardver: *Apple Mac Mini M4*
+Hardware: *Apple Mac Mini M4*
 
 ### 🤏 Small Input Test
 
