@@ -14,5 +14,27 @@ I implemented a brute-force solution using nested loops. To avoid the "double-co
 
 ## Complexity
 
-* Time complexity: O(n2) – Each element is compared with every other element.
-* Space complexity: O(1) – No extra data structures are used.
+* **Time complexity**: *O(n^2)* – Each element is compared with every other element.
+* **Space complexity**: *O(1)* – No extra data structures are used.
+
+
+## Benchmark
+
+I made it in release mode with for more accurate resoults:
+```bash
+cargo run --release
+```
+
+Hardver: *Apple Mac Mini M4*
+
+### Small Input Test
+
+Execution Time: 1.25µs
+Memory Delta:   0 bytes
+Current Memory: 1409024 bytes
+
+### Stress Test (Large Input)
+
+Execution Time: 43.046875ms
+Memory Delta:   0 bytes
+Current Memory: 1474560 bytes
