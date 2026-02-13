@@ -1,4 +1,5 @@
 mod solution;
+mod unit_tests;
 use memory_stats::memory_stats;
 use solution::Solution as sol;
 use std::time::Instant;
@@ -17,11 +18,9 @@ fn main() {
     let duration = start_time.elapsed();
     let usage_after = memory_stats().unwrap();
 
-    let mem_used = if usage_after.physical_mem >= usage_before.physical_mem {
-        usage_after.physical_mem - usage_before.physical_mem
-    } else {
-        0
-    };
+    let mem_used = usage_after
+        .physical_mem
+        .saturating_sub(usage_before.physical_mem);
 
     println!("Execution Time: {:?}", duration);
     println!("Memory Delta:   {} bytes", mem_used);
@@ -42,11 +41,9 @@ fn main() {
     let duration_stress = start_time_stress.elapsed();
     let usage_after_stress = memory_stats().unwrap();
 
-    let mem_used_stress = if usage_after_stress.physical_mem >= usage_before_stress.physical_mem {
-        usage_after_stress.physical_mem - usage_before_stress.physical_mem
-    } else {
-        0
-    };
+    let mem_used_stress = usage_after_stress
+        .physical_mem
+        .saturating_sub(usage_before_stress.physical_mem);
 
     println!("Execution Time: {:?}", duration_stress);
     println!("Memory Delta:   {} bytes", mem_used_stress);
